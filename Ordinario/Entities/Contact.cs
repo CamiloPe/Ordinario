@@ -26,6 +26,7 @@ namespace Ordinario.Entities
         [Required]
         [StringLength(30)]
         public string Department { get; set; }
+        public string FullName { get { return $"{FirstName} {LastName}"; } }
         #endregion
     }
 }
