@@ -16,7 +16,7 @@ namespace Ordinario
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FrmCoach());
+            Application.Run(new FrmCompany());
         }
     }
 }

@@ -91,7 +91,7 @@ namespace Ordinario
 
         private void btnDelete_Click(object sender, EventArgs e)
         {
-            if (MetroFramework.MetroMessageBox.Show(this, "quieres eliminar el entrenador?") == DialogResult.OK)
+            if (MetroFramework.MetroMessageBox.Show(this, "quieres eliminar el major?") == DialogResult.OK)
             {
                 using (DataContext dataContext = new DataContext())
                 {
@@ -105,7 +105,7 @@ namespace Ordinario
 
                         dataContext.Entry<Major>(major).State = EntityState.Deleted;
                         dataContext.SaveChanges();
-                        MetroFramework.MetroMessageBox.Show(this, "entrenador eliminado");
+                        MetroFramework.MetroMessageBox.Show(this, "major eliminado");
                         majorBindingSource.RemoveCurrent();
                         pctPhoto.Image = null;
                         pnlDatos.Enabled = false;
